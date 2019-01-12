@@ -89,5 +89,5 @@ def cnn(features, labels, mode):
   pool2_flat = tf.reshape(pool2, [-1, 7 * 7 * 64])
   dense = tf.dense(input=pool2_flat, units=1024, activation=tf.relu)
   dropout = tf.dropout(
-      input=dense, rate=0.4, training=mode == tf.estimator.ModeKeys.TRAIN)
+      input=dense, rate=0.4, train=mode == tf.estimator.ModeKeys.TRAIN)
 ```
