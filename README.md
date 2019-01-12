@@ -35,7 +35,7 @@ tf.enable_eager_execution()
 ```
 eager()
 ```
-# CNN with Estimators
+# CNN layer with Estimators
 ### Old:
 ```
   pool2_flat = tf.reshape(pool2, [-1, 7 * 7 * 64])
