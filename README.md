@@ -3,7 +3,10 @@
 
 Official TensorFlow fork with shorter, cleaner and better naming conventions for functions and methods
 
-Here's a code comparison between an original and TensorShort version of Keras API:
+1. Use ```t.``` for TensorFlow and ```k.``` for Keras API before defining methods
+2. See [full changelog here](./changelog.md)
+
+Here are some code comparisons between an original and TensorShort versions:
 
 # Keras API
 ### Old:
