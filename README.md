@@ -24,3 +24,13 @@ model = k.sequential([
     k.dense(10, activation=softmax)
 ])
 ```
+# Eager
+### Old:
+```
+tf.enable_eager_execution()
+```
+
+### New:
+```
+eager()
+```
