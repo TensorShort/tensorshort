@@ -51,6 +51,7 @@ model = k.sequential([
 ```
   pool2_flat = t.reshape(pool2, [-1, 7 * 7 * 64])
   dense = t.dense(input=pool2_flat, units=1024, activation=t.relu)
+  
   dropout = t.dropout(
       input=dense, rate=0.4, train=mode == estimator.TRAIN)
 ```
