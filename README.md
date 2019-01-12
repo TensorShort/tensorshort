@@ -8,6 +8,16 @@ Official TensorFlow fork with shorter, cleaner and better naming conventions for
 
 Here are some code comparisons between an original and TensorShort versions:
 
+# Eager execution
+### Old:
+```
+tf.enable_eager_execution()
+```
+
+### New:
+```
+eager()
+```
 # Keras API
 ### Old:
 
@@ -27,16 +37,6 @@ model = k.sequential([
     k.dense(128, activation=relu),
     k.dense(10, activation=softmax)
 ])
-```
-# Eager execution
-### Old:
-```
-tf.enable_eager_execution()
-```
-
-### New:
-```
-eager()
 ```
 # CNN layer with Estimators
 ### Old:
