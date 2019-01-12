@@ -38,7 +38,7 @@ model = k.sequential([
     k.dense(10, activation=softmax)
 ])
 ```
-# CNN layer with Estimators
+# CNN layer with Estimator dropout
 ### Old:
 ```
   pool2_flat = tf.reshape(pool2, [-1, 7 * 7 * 64])
