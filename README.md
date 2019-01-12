@@ -5,6 +5,7 @@ Official TensorFlow fork with shorter, cleaner and better naming conventions for
 
 Here's a code comparison between an original and TensorShort version of Keras API:
 
+# Keras API
 ### Old:
 
 ```
@@ -24,7 +25,7 @@ model = k.sequential([
     k.dense(10, activation=softmax)
 ])
 ```
-# Eager
+# Eager execution
 ### Old:
 ```
 tf.enable_eager_execution()
