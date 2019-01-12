@@ -3,7 +3,7 @@
 
 Official TensorFlow fork with shorter, cleaner and better naming conventions for functions and methods
 
-Here's a code comparison between an original and TensorShort version:
+Here's a code comparison between an original and TensorShort version of Keras API:
 
 ### Old:
 
@@ -18,9 +18,9 @@ model = keras.Sequential([
 ### New:
 
 ```
-model = sequential([
-    flatten(input_shape=(28, 28)),
-    dense(128, activation=relu),
-    dense(10, activation=softmax)
+model = k.sequential([
+    k.flatten(input_shape=(28, 28)),
+    k.dense(128, activation=relu),
+    k.dense(10, activation=softmax)
 ])
 ```
