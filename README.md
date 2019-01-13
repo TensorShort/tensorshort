@@ -63,4 +63,4 @@ model = k.sequential([
       input=dense, rate=0.4, train=mode == estimator.TRAIN)
 ```
 
-TensorShort is an functional experiment project, maintained by Andrew Stepin.
+TensorShort is an functional experiment project for personal use, maintained by Andrew Stepin.
