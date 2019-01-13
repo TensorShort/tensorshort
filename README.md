@@ -1,12 +1,13 @@
 ![TensorShort Logo](assets/tensorflow_transparent.png)
 # TensorShort
 
-Official TensorFlow fork with shorter, cleaner and better naming conventions for functions and methods
+Official TensorFlow fork with shorter, cleaner and better naming conventions for functions and methods.
+TensorShort works on top of TensorFlow: 
 
-1. Use ```t.``` for TensorFlow and ```k.``` for Keras API before defining methods
-2. See [full changelog here](./changelog.md)
+* Any existing code in TensorFlow works with TensorShort
+* All new methods and functions mirror their aliases 
 
-Here are some code comparisons between an original and TensorShort versions:
+Here's a lovely example:
 
 # Eager execution
 ### Old:
@@ -18,6 +19,12 @@ tf.enable_eager_execution()
 ```
 eager()
 ```
+
+1. Use ```t.``` for TensorFlow and ```k.``` for Keras API before defining methods
+2. See [full changelog here](./changelog.md)
+
+Here are some code comparisons between an original and TensorShort versions:
+
 # Keras API
 ### Old:
 
@@ -55,3 +62,5 @@ model = k.sequential([
   dropout = t.dropout(
       input=dense, rate=0.4, train=mode == estimator.TRAIN)
 ```
+
+TensorShort is an functional experiment project, maintained by Andrew Stepin.
